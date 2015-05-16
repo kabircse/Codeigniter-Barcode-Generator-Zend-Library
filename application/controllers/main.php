@@ -15,7 +15,7 @@ class Main extends CI_Controller {
 		$this->load->library('zend');
 		//load in folder Zend
 		$this->zend->load('Zend/Barcode');
-		//generate barcode
+		//generate barcode with your code.
 		Zend_Barcode::render('code128', 'image', array('text'=>$code), array());
 	}
 	
